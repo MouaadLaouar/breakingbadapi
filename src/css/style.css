@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #f3efcc;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ece7b4;
+}
+
+section {
+  height: 80vh;
+  width: 50vh;
+  background-color: #406343;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  height: 50%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.ctn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.ctn span {
+  margin: 10px;
+  color: black;
+}
+
+.btn {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.btn div img {
+  height: 40px;
+  width: 40px;
+}
+
+.left, .right {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  img {
+    height: 100%;
+    width: 50%;
+  }
+  .content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
